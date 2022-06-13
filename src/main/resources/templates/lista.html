@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmls:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>SpringBoot</title>
+</head>
+<body>
+<h1 th:text="${titulo}"></h1>
+<!-- Si la lista esta vacia mostrara el mensaje -->
+<div th:if="${usuarios.size==0}">No hay usuarios en la lista</div>
+</body>
+</html>
