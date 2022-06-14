@@ -7,6 +7,18 @@ public class Usuario {
 	private String email;
 	
 	
+	//CONSTRUCTORES
+	public Usuario() {
+		
+	}
+	public Usuario(String nombre, String apellido, String email) {
+		super();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.email = email;
+	}
+	
+	//GETTERS Y SETTERS
 	public String getNombre() {
 		return nombre;
 	}
