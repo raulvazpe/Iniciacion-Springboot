@@ -16,4 +16,11 @@ public class EjemploVariablesController {
 		model.addAttribute("resultado","La variable enviada por parametro es: "+texto);
 		return "variables/ver";
 	}
+	
+	@GetMapping("/string/{texto}/{numero}")
+	public String variables(@PathVariable String texto,@PathVariable String numero, Model model){
+		model.addAttribute("titulo", "PATHVARIABLE");
+		model.addAttribute("resultado","La variable enviada por parametro es: "+texto+" y el numero es :"+numero);
+		return "variables/ver";
+	}
 }
